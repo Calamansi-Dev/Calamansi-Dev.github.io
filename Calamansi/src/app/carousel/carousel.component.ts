@@ -6,7 +6,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./carousel.component.css']
 })
 export class CarouselComponent implements OnInit {
-  @Input() data: string[];
+  @Input() data: any[];
   i: number;
   constructor() {
     this.i = 0;
