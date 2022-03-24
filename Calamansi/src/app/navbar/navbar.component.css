@@ -25,3 +25,14 @@ a {
    left: 0;
    right: 0;
 }
+.noPadding {
+   padding-right: 0px;
+   padding-left: 0px;
+   left: calc(50% - 73.33px);
+}
+
+   
+   a {
+      text-align: center;
+      
+   }

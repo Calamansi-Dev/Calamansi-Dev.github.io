@@ -308,14 +308,46 @@
     font-size: 50px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
+  .container {
+    width: 100%;
+    
+  }
+  
   
 </style>
-<app-navbar></app-navbar>
-<!-- Toolbar -->
-<div class="toolbar" role="banner">
-  <span class="right">Calamansi</span>
-</div>
-<app-carousel [data]="items"></app-carousel>
+<div class="container">
+  <div class="row">
+    
+    <div class="col">
+       <div id="section1">    
+          <h1>Calamansi</h1>
+          <app-carousel [data]="items"></app-carousel>
+       </div>
+       <div id="section21">         
+         <h1>Food</h1>
+         <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+       </div>      
+       <div id="section22">         
+         <h1>Wine &Spirits</h1>
+         <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+       </div>        
+       <div id="section3">         
+         <h1>Menu</h1>
+         <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+       </div>
+       <div id="section4"> 
+         <h1>Contact</h1>
+         <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+       </div>
+       <div id="section5"> 
+        <h1>Events</h1>
+        <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+      </div>
+     </div>
+     <app-navbar></app-navbar>
+  </div>
+</div> 
+
 <div class="content" role="main">
   
   <!-- Highlight Card -->
