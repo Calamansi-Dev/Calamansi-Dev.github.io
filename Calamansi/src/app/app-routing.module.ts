@@ -12,7 +12,10 @@ const routes: Routes = [
   { path: 'home-page', component: HomePageComponent },
   { path: 'events-page', component: EventsPageComponent },
   { path: 'contact-page', component: ContactPageComponent },
-  { path: 'menu-page', component: MenuPageComponent }
+  { path: 'menu-page', component: MenuPageComponent },
+  { path: '', redirectTo: '/home-page', pathMatch: 'full' },
+  { path: '**', redirectTo: '/contact-page', pathMatch: 'full' }
+
 
 ];
 
