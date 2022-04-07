@@ -327,13 +327,13 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav" routerLinkActive="active">
-        <li><a routerLink="/about-page">About</a></li>
-        <li><a routerLink="/menu-page">Menu</a></li>
-        <li><a routerLink="/contact-page">Contact</a></li>
-        <li><a routerLink="/events-page">Events</a></li>
+        <li><a data-toggle="collapse" data-target=".in" routerLink="/about-page">About</a></li>
+        <li><a data-toggle="collapse" data-target=".in" routerLink="/menu-page">Menu</a></li>
+        <li><a data-toggle="collapse" data-target=".in" routerLink="/contact-page">Contact</a></li>
+        <li><a data-toggle="collapse" data-target=".in" routerLink="/events-page">Events</a></li>
       </ul>
     </div>
   </div>
 </nav>
-
+<app-carousel [data]="items"></app-carousel>
 <router-outlet></router-outlet>

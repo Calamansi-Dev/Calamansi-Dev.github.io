@@ -46,12 +46,5 @@ export class AppComponent {
       first: ''
     }
   ]
-  title = 'Calamansi';
-  mapOptions: google.maps.MapOptions = {
-    center: { lat: 35.26356962917474, lng: -120.70099663487278 },
-    zoom : 13
-  }
-  marker = {
-    position: { lat: 35.26356962917474, lng: -120.70099663487278 },
-  }
+  
 }
