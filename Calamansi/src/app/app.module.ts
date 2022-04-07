@@ -7,12 +7,23 @@ import { CarouselComponent } from './carousel/carousel.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { GoogleMapsModule } from '@angular/google-maps'
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+import { HomePageComponent } from './home-page/home-page.component';
+import { MenuPageComponent } from './menu-page/menu-page.component';
+import { ContactPageComponent } from './contact-page/contact-page.component';
+import { AboutPageComponent } from './about-page/about-page.component';
+import { EventsPageComponent } from './events-page/events-page.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     CarouselComponent,
-    NavbarComponent
+    NavbarComponent,
+    HomePageComponent,
+    MenuPageComponent,
+    ContactPageComponent,
+    AboutPageComponent,
+    EventsPageComponent
   ],
   imports: [
     BrowserModule,

@@ -1,14 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-about-page',
+  templateUrl: './about-page.component.html',
+  styleUrls: ['./about-page.component.css']
 })
-export class AppComponent {
-  addActive(e: any){
-    console.log(e.target.id, e.target.className);
-  }
+export class AboutPageComponent implements OnInit {
   items = [
     {
       fileLocation: 'deck.jpeg',
@@ -46,12 +43,10 @@ export class AppComponent {
       first: ''
     }
   ]
-  title = 'Calamansi';
-  mapOptions: google.maps.MapOptions = {
-    center: { lat: 35.26356962917474, lng: -120.70099663487278 },
-    zoom : 13
+  
+  constructor() { }
+
+  ngOnInit(): void {
   }
-  marker = {
-    position: { lat: 35.26356962917474, lng: -120.70099663487278 },
-  }
+
 }
