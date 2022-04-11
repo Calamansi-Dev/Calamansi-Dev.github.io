@@ -13,16 +13,8 @@ const routes: Routes = [
   { path: 'events-page', component: EventsPageComponent },
   { path: 'contact-page', component: ContactPageComponent },
   { path: 'menu-page', component: MenuPageComponent },
-  { path: 'Calamansi#/about-page', component: AboutPageComponent },
-  { path: 'Calamansi#/home-page', component: HomePageComponent },
-  { path: 'Calamansi#/events-page', component: EventsPageComponent },
-  { path: 'Calamansi#/contact-page', component: ContactPageComponent },
-  { path: 'Calamansi#/menu-page', component: MenuPageComponent },
-  { path: 'Calamansi#/', redirectTo: '/home-page', pathMatch: 'full' },
   { path: '', redirectTo: '/home-page', pathMatch: 'full' },
   { path: '**', redirectTo: '/contact-page', pathMatch: 'full' }
-
-
 ];
 
 @NgModule({
